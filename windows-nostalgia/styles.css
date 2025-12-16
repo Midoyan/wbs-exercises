@@ -1,0 +1,75 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: sans-serif;
+}
+
+body {
+    background: #92C5EB;
+}
+
+.window {
+    border-radius: 5px;
+    border: 3px solid #ffffff;
+    border-bottom-color: #000000;
+    border-right-color: #000000;
+    background-color: #C0C0C0;
+    width: 665px;
+    height: 252px;
+    margin: 0px auto;
+}
+
+.window-body {
+    padding: 30px;
+}
+
+.window-content {
+    display: flex;
+    align-items: center;
+    margin-bottom: 28px;
+
+    p {
+        font-size: 21.5px;
+    }
+}
+
+.window-header {
+    padding: 8px 30px;
+    background: #0D236A;
+    background: linear-gradient(90deg, rgba(13, 35, 106, 1) 0%, rgba(175, 205, 243, 1) 100%);
+    border-top-right-radius: 5px;
+    border-top-left-radius: 5px;
+    border-bottom: 3px solid rgba(0,0,0,0.15);
+    height: 40px;
+}
+
+.title {
+    color: #ffffff;
+    font-size: 20px;
+    font-weight: 600;
+}
+
+.cancel-button {
+    background-color: #C0C0C0;
+    border: 3px solid #ffffff;
+    width: 114px;
+    height: 52px;
+    cursor: pointer;
+    border-bottom-color: #000000;
+    border-right-color: #000000;
+    font-size: 22px;
+    float: right;
+}
+
+.cancel-button:focus {
+    border-color: #000 #fff #fff #000;
+}
+
+.cross {
+    width: 70px;
+    height: 70px;
+    box-shadow: 3px 3px #7C8080;
+    border-radius: 50%;
+    margin-right: 35px;
+}
