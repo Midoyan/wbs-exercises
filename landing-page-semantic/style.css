@@ -33,6 +33,16 @@ aside {
     margin-bottom: 20px;
 }
 
+.flex-wrapper {
+    display: flex;
+    flex-wrap: wrap;
+    gap: 20px;
+
+    section {
+        flex: 0 0 calc(50% - 10px);
+    }
+}
+
 h2 {
     margin-bottom: 10px;
     color: #4caf50;
@@ -100,4 +110,10 @@ footer {
     text-align: center;
     color: #777;
     font-size: 14px;
+}
+
+@media (max-width: 600px) {
+    .flex-wrapper section {
+        flex: 0 0 100%;
+    }
 }
