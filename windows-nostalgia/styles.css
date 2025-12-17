@@ -22,6 +22,8 @@ body {
 
 .window-body {
     padding: 30px;
+    display: flex;
+    flex-direction: column;
 }
 
 .window-content {
@@ -59,7 +61,7 @@ body {
     border-bottom-color: #000000;
     border-right-color: #000000;
     font-size: 22px;
-    float: right;
+    align-self: flex-end;
 }
 
 .cancel-button:focus {
