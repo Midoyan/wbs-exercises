@@ -7,6 +7,10 @@
 
 body {
     background: #92C5EB;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    min-height: 100vh;
 }
 
 .window {
@@ -15,24 +19,19 @@ body {
     border-bottom-color: #000000;
     border-right-color: #000000;
     background-color: #C0C0C0;
-    width: 665px;
-    height: 252px;
     margin: 0px auto;
+    display: grid;
+    grid-template-rows: auto 1fr auto;
 }
 
 .window-body {
     padding: 30px;
-    display: flex;
-    flex-direction: column;
-}
-
-.window-content {
-    display: flex;
-    align-items: center;
-    margin-bottom: 28px;
-
+    display: grid;
+    grid-template-columns: 70px 1fr;
+    gap: 35px;
     p {
         font-size: 21.5px;
+        align-self: center;
     }
 }
 
@@ -42,8 +41,7 @@ body {
     background: linear-gradient(90deg, rgba(13, 35, 106, 1) 0%, rgba(175, 205, 243, 1) 100%);
     border-top-right-radius: 5px;
     border-top-left-radius: 5px;
-    border-bottom: 3px solid rgba(0,0,0,0.15);
-    height: 40px;
+    border-bottom: 3px solid rgba(0, 0, 0, 0.15);
 }
 
 .title {
@@ -61,7 +59,9 @@ body {
     border-bottom-color: #000000;
     border-right-color: #000000;
     font-size: 22px;
-    align-self: flex-end;
+    justify-self: flex-end;
+    margin-right: 30px;
+    margin-bottom: 30px;
 }
 
 .cancel-button:focus {
@@ -73,5 +73,4 @@ body {
     height: 70px;
     box-shadow: 3px 3px #7C8080;
     border-radius: 50%;
-    margin-right: 35px;
 }
